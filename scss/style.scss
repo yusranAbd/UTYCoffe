@@ -399,16 +399,16 @@ h1, h2, h3, h4, h5,
 		position: relative;
 		height: 750px;
 		z-index: 0;
-		.slider-item {
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center center;
-			height: 750px;
-			position: relative;
-			z-index: 0;
-			@include media-breakpoint-down(lg){
-				background-position: center center !important;
-			}
+		// .slider-item {
+		// 	background-size: cover;
+		// 	background-repeat: no-repeat;
+		// 	background-position: center center;
+		// 	height: 750px;
+		// 	position: relative;
+		// 	z-index: 0;
+		// 	@include media-breakpoint-down(lg){
+		// 		background-position: center center !important;
+		// 	}
 			.overlay{
 				position: absolute;
 				top: 0;
