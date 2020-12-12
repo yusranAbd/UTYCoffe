@@ -650,7 +650,8 @@ h1, h2, h3, h4, h5,
 //INTRO
 .ftco-intro{
 	@include media-breakpoint-up(lg){
-		margin-top: -130px;
+		margin-top: -120px;
+		margin-bottom: 20%;
 	}
 	.container-wrap{
 		z-index: 2 !important;
