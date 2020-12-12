@@ -119,6 +119,57 @@ body {
     color: #fff;
   }
 
+  .popup_model{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .popup_model_psn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .model_content{
+    width: 70%;
+    height:200%;
+    background-color: #cda45e;
+    border-radius: 10px;
+    position: relative;
+  }
+  .model_content_psn{
+    width: 100%;
+    height:300%;
+    background-color: #cda45e;
+    border-radius: 10px;
+    position: relative;
+  }
+  .close_popup{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 41px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  .close_popup_psn{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 41px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
