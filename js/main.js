@@ -18,22 +18,6 @@ AOS.init({
 		verticalOffset: 0
 	});
 
-	//popup boking
-	document.getElementById('boking').addEventListener('click', function () {
-		document.querySelector('.popup_model').style.display = 'flex';
-	});
-	document.getElementById('close_popup').addEventListener('click', function () {
-		document.querySelector('.popup_model').style.display = 'none';
-	});
-
-	//popup pesan
-	document.getElementById('pesan').addEventListener('click', function () {
-		document.querySelector('.popup_model_psn').style.display = 'flex';
-	});
-	document.getElementById('close_popup_psn').addEventListener('click', function () {
-		document.querySelector('.popup_model_psn').style.display = 'none';
-	});
-
 	// Scrollax
 	$.Scrollax();
 
@@ -312,3 +296,18 @@ AOS.init({
 
 })(jQuery);
 
+//popup boking
+document.getElementById('boking').addEventListener('click', function () {
+	document.querySelector('.popup_model').style.display = 'flex';
+});
+document.getElementById('close_popup').addEventListener('click', function () {
+	document.querySelector('.popup_model').style.display = 'none';
+});
+
+//popup pesan
+document.getElementById('pesan').addEventListener('click', function () {
+	document.querySelector('.popup_model_psn').style.display = 'flex';
+});
+document.getElementById('close_popup_psn').addEventListener('click', function () {
+	document.querySelector('.popup_model_psn').style.display = 'none';
+});

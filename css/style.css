@@ -136,6 +136,7 @@ body {
     top: 0;
     display: flex;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
     align-items: center;
     display: none;
   }
@@ -147,9 +148,9 @@ body {
     position: relative;
   }
   .model_content_psn{
-    width: 100%;
+    width: 700%;
     height:300%;
-    background-color: #cda45e;
+    background-color:  black;
     border-radius: 10px;
     position: relative;
   }
@@ -168,6 +169,18 @@ body {
     font-size: 41px;
     transform: rotate(45deg);
     cursor: pointer;
+  }
+  .model_menu_psn{
+
+  }
+  .row_model_psn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
   }
 
 hr {
