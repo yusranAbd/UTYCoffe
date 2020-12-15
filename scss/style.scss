@@ -613,7 +613,7 @@ h1, h2, h3, h4, h5,
 		}
 	}
 	&.btn-white {
-		background: $white;
+		background: $primary;
 		border: 1px solid $white;
 		color: $black;
 		&:hover {
@@ -1344,7 +1344,7 @@ h1, h2, h3, h4, h5,
 		}
 		span.position{
 			display: block;
-			margin-bottom: 15px;
+			margin-bottom: px;
 			font-size: 12px;
 			font-weight: 400;
 			color: lighten($black,80%);
