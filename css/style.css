@@ -129,9 +129,20 @@ body {
     align-items: center;
     display: none;
   }
+  .popup_model_donasi{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
   .popup_model_psn{
     width: 100%;
     height: 100%;
+    z-index: 1000;
     position: absolute;
     float: left;
     top: 0;
@@ -140,6 +151,7 @@ body {
     align-items: center;
     display: none;
   }
+
   .model_content{
     width: 70%;
     height:200%;
@@ -147,10 +159,19 @@ body {
     border-radius: 10px;
     position: relative;
   }
+  .model_content_donasi{
+    width: 70%;
+    height:200%;
+    background-color: #cda45e;
+    border-radius: 10px;
+    position: relative;
+  }
   .model_content_psn{
-    width: 700%;
-    height:300%;
-    background-color: rgb(26, 27, 22);
+    width: 500%;
+    height:400%;
+    align-items: center;
+    justify-content: center;
+    background-color:#cda45e;
     border-radius: 10px;
     position: relative;
   }
@@ -170,18 +191,51 @@ body {
     transform: rotate(45deg);
     cursor: pointer;
   }
-  .model_menu_psn{
+  .close_popup_donasi{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 41px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+.input-donasi{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+  input[type="checkbox"]{
+    position: relative;
+    width: 40px;
+    height: 18px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0,.2);
+    /* transition: .5s; */
+  }
+  input:checked[type="checkbox"]{
+    background: #cda45e;
+  }
+  input[type="checkbox"]:before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+  }
+  input:checked[type="checkbox"]:before{
+    left: 25px;
+  }
 
-  }
-  .row_model_psn{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
+  
 
   progress{
     -webkit-appearance: none;
@@ -202,12 +256,30 @@ body {
     margin: 10px;
     transition: 0.8s;
     border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  .donasi1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: 0.8s;
   }
   .prog1{
     color: #cda45e;
   }
   .prog1:hover{
     color: white;
+  }
+  .prog1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  .prog1:hover::before{
+    height: 180%;
   }
 
 .posisi{

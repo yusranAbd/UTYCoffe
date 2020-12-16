@@ -311,3 +311,11 @@ document.getElementById('pesan').addEventListener('click', function () {
 document.getElementById('close_popup_psn').addEventListener('click', function () {
 	document.querySelector('.popup_model_psn').style.display = 'none';
 });
+
+//popup donasi
+document.getElementById('donasi').addEventListener('click', function () {
+	document.querySelector('.popup_model_donasi').style.display = 'flex';
+});
+document.getElementById('close_popup_donasi').addEventListener('click', function () {
+	document.querySelector('.popup_model_doasni').style.display = 'none';
+});

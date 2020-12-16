@@ -110,16 +110,28 @@
 										<p>Far far away, behind the word mountains, far from the countries</p>
 									</td>
 
-									<td class="price">$4.90</td>
+									<td class="price">Rp.28.000</td>
 
 									<td class="quantity">
-										<div class="input-group mb-3">
-											<input type="text" name="quantity"
-												class="quantity form-control input-number" value="1" min="1" max="100">
+										<div class="input-group mb-3 ">
+											<span class="input-group-btn mr-2">
+												<button type="button" class="quantity-left-minus btn" data-type="minus"
+													data-field="">
+													<i class="icon-minus"></i>
+												</button>
+											</span>
+											<input type="text" id="quantity" name="quantity"
+												class="form-control input-number" value="1" min="1" max="100">
+											<span class="input-group-btn ml-2">
+												<button type="button" class="quantity-right-plus btn" data-type="plus"
+													data-field="">
+													<i class="icon-plus"></i>
+												</button>
+											</span>
 										</div>
 									</td>
 
-									<td class="total">$4.90</td>
+									<td class="total">Rp.28.000</td>
 								</tr><!-- END TR-->
 
 								<tr class="text-center">
@@ -134,16 +146,28 @@
 										<p>Far far away, behind the word mountains, far from the countries</p>
 									</td>
 
-									<td class="price">$15.70</td>
+									<td class="price">Rp.100.000</td>
 
-									<td class="quantity">
+									<td class="">
 										<div class="input-group mb-3">
-											<input type="text" name="quantity"
-												class="quantity form-control input-number" value="1" min="1" max="100">
+											<span class="input-group-btn mr-2">
+												<button type="button" class="quantity-left-minus btn" data-type="minus"
+													data-field="">
+													<i class="icon-minus"></i>
+												</button>
+											</span>
+											<input type="text" id="quantity" name="quantity"
+												class="form-control input-number" value="1" min="1" max="100">
+											<span class="input-group-btn ml-2">
+												<button type="button" class="quantity-right-plus btn" data-type="plus"
+													data-field="">
+													<i class="icon-plus"></i>
+												</button>
+											</span>
 										</div>
 									</td>
 
-									<td class="total">$15.70</td>
+									<td class="total">Rp.100.000</td>
 								</tr><!-- END TR-->
 							</tbody>
 						</table>
@@ -153,24 +177,34 @@
 			<div class="row justify-content-end">
 				<div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
 					<div class="cart-total mb-3">
-						<h3>Cart Totals</h3>
+						<h3>Total Keranjang</h3>
 						<p class="d-flex">
 							<span>Subtotal</span>
-							<span>$20.60</span>
+							<span>Rp.128.000</span>
 						</p>
 						<p class="d-flex">
-							<span>Delivery</span>
-							<span>$0.00</span>
+							<span>Ongkir</span>
+							<span>Rp.0</span>
 						</p>
 						<p class="d-flex">
-							<span>Discount</span>
-							<span>$3.00</span>
+							<span>Diskon</span>
+							<span>30%</span>
+						</p>
+						<p class="d-flex">
+							<span>Donasi</span>
+							<span>Rp.500</span>
 						</p>
 						<hr>
 						<p class="d-flex total-price">
 							<span>Total</span>
-							<span>$17.60</span>
+							<span>Rp.34.500</span>
 						</p>
+					</div>
+					<div class="input-donasi">
+						<span style="font-size: 18px">Donasi Rp.500 ?</span>
+						<div>
+							<input type="checkbox" name="">
+						</div>
 					</div>
 					<p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to
 							Checkout</a></p>
